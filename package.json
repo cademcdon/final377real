@@ -1,0 +1,28 @@
+{
+  "name": "final377real",
+  "version": "1.0.0",
+  "description": "INST 377 Real final project real",
+  "homepage": "https://github.com/cademcdon/final377real#readme",
+  "bugs": {
+    "url": "https://github.com/cademcdon/final377real/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cademcdon/final377real.git"
+  },
+  "license": "ISC",
+  "author": "Cade McDonald",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e '8'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.89.0",
+    "body-parser": "^2.2.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  }
+}
