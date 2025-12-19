@@ -1,21 +1,21 @@
 body {
-  background-color: yellow;
+  background-color: rgb(86, 58, 121);
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
 #bar {
-    text-align: left;
-    background-color: #7c7c7c;
+    text-align: center;
+    background-color: #ff0000;
     color: white;
     padding: 5px;
-    font-family: cursive;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     clear:both
 }
 
 #main-nav {
-    background-color: crimson;
+    background-color: rgb(244, 206, 91);
     text-align: center;
     padding: 10px 20px;
 }
