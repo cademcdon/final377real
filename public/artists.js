@@ -1,6 +1,6 @@
 async function createArtist() {
     console.log('inside createArtist')
-    await fetch('http://localhost:3006/artist', {
+    await fetch('/artist', {
         method: 'POST',
         body: JSON.stringify({
             artistName: `${document.getElementById('artistName2').value}`,
@@ -21,7 +21,7 @@ async function createArtist() {
 }
 
 async function loadArtistData() {
-    const result = await fetch('http://localhost:3006/artists');
+    const result = await fetch('/artists');
     const resultJson = await result.json();
     console.log('in loadArtistData ', resultJson);
     return resultJson; 
