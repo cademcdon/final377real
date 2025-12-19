@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Your Artists</title>
+        <link rel="stylesheet" href="artists.css">
+        <script src="artists.js" defer></script>
+        
+    </head>
+
+    <body>
+        <!-- Header Section -->
+        <header id="bar">
+            <h1>YOUR ARTISTS</h1>
+
+        </header>
+        <!-- Navigation Section -->
+        <nav id="main-nav">
+            <ul>
+                <a href="artists.html" class="nav-button">Your Artists</a>
+                <a href="homePage.html" class="nav-button">Home</a>
+                <a href="musicInfo.html" class="nav-button">Music Info</a>
+            </ul>
+        </nav>
+
+        <div id="questions">
+            <h2>Add a Global Review:</h2>
+            <form>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h3>Artist:</h3>
+                    <input type="text" id="artistName2">
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h3>Their best song?:</h3>
+                    <input type="text" id="bestSong2">
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h3>Second best?:</h3>
+                    <input type="text" id="secondBest2">
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h3>Third best?:</h3>
+                    <input type="text" id="thirdBest2">
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <h3>Your name:</h3>
+                    <input type="text" id="authorName2">
+                </div>
+                <button type="button" onclick="createArtist()">SUBMIT</button>
+            </form>
+        </div>
+
+        <div id="artistButtons">
+
+        </div>
+
+        <div id="desBox">
+            <h1 id="artistName"></h1>
+            <br>
+            <h2 id="bestSong"></h2>
+            <br>
+            <h2 id="secondBest"></h2>
+            <br>
+            <h2 id="thirdBest"></h2>
+            <br>
+            <h2 id="author"></h2>
+        </div>
+    </body>
+</html>

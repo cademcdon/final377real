@@ -8,11 +8,17 @@ const port = 3006;
 dotenv.config();
 
 app.use(bodyParser.json());
+app.use(express.static(__dirname + '/public'));
 
 //initialize supabase client
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
+
+//THIS DETERMINES OPENING HOME PAGE
+app.get('/', (req,res) => {
+    res.sendFile('public/artists.html', { root: __dirname});
+});
 
 app.get('/artists', async (req,res) => {
     console.log('Attempting to GET all artists');
