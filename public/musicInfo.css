@@ -38,3 +38,21 @@ body {
   background-color: white;
   color: black;
 }
+
+#box1 {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: gold;
+    width: 30%;
+    padding: 10px;
+}
+
+#box2 {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: gold;
+    width: 30%;
+    padding: 10px;
+}

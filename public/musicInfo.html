@@ -3,6 +3,7 @@
         <title>MUSIC INFO</title>
         <link rel="stylesheet" href="musicInfo.css">
         <script src="musicInfo.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
 
     <body>
@@ -19,5 +20,34 @@
                 <a href="musicInfo.html" class="nav-button">Music Info</a>
             </ul>
         </nav>
+
+        <div id="box1">
+            <form>
+                <h1>Artist Info</h1>
+                <input type="text" id="artistnametext">
+                <br>
+                <button type="button" onclick="getCountry()">button</button>
+            </form>
+            <h2 id="textArea"></h2>
+        </div>
+
+        <div id="box2">
+            <form>
+                <h1>Song Lyrics</h1>
+                <h2>Artist Name</h2>
+                <input type="text" id="artistWord">
+                <br>
+                <h2>Song Name</h2>
+                <input type="text" id="songTitle">
+                <br>
+                <button type="button" onclick="fillLyrics()">button</button>
+            </form>
+            <p id="lyricArea"></p>
+        </div>
+
+        <div>
+        <canvas id="myChart"></canvas>
+        </div>
+        
     </body>
 </html>
