@@ -21,9 +21,9 @@ async function fillLyrics() {
 
     document.getElementById("lyricArea").innerHTML = response.lyrics;
 
-    let text = response.lyrics;
-    let words = text.split(' ');
-    let wordCount = {};
+    var text = response.lyrics;
+    var words = text.split(' ');
+    var wordCount = {};
 
     for (let word of words) {
         if (wordCount[word]) {
@@ -35,12 +35,18 @@ async function fillLyrics() {
 
     console.log(wordCount); 
 
-    let songLabels = Object.keys(wordCount);
-    let songData = Object.values(wordCount);
+    var songLabels = Object.keys(wordCount);
+    var songData = Object.values(wordCount);
 
-    const ctx = document.getElementById('myChart');
+    var ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
+    const existingChart = Chart.getChart('myChart');
+  
+    if (existingChart) {
+        existingChart.destroy();
+    }
+
+    myNewChart = new Chart(ctx, {
         type: 'bar',
         data: {
         labels: songLabels,

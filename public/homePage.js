@@ -5,6 +5,7 @@ function getGenre() {
 }
 
 async function insertGenre() {
+    document.getElementById('genreText').innerHTML = '';
     const response = await getGenre();
     console.log(response);
     const genre = document.createElement('a');
@@ -22,17 +23,4 @@ function transform(phrase){
     result = result + '+genre';
     console.log(result);
     return result;
-}
-
-function createMap() {
-    var map = L.map('map').setView([39.8283, -98.5795], 4);
-
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-}
-
-window.onload = function(){
-    createMap();
 }

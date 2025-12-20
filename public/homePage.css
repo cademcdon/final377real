@@ -46,3 +46,17 @@ body {
   margin-bottom: 500px;
   margin-top: 150px;
 }
+
+#randomSection {
+    background-color: green;
+    color: white;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.gtext {
+  align-items: center;
+}
