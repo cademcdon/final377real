@@ -17,7 +17,7 @@ const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
 
 //THIS DETERMINES OPENING HOME PAGE
 app.get('/', (req,res) => {
-    res.sendFile('public/artists.html', { root: __dirname});
+    res.sendFile('public/homePage.html', { root: __dirname});
 });
 
 app.get('/artists', async (req,res) => {
