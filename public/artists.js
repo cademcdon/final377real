@@ -63,8 +63,6 @@ async function infoClick(name) {
     document.getElementById('desBox').style.display = 'block';
 }
 
-//window.onload = loadArtistData;
-
 window.onload = function() {
     //fetchArtists();
     createButtons();

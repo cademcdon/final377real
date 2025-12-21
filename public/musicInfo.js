@@ -93,8 +93,4 @@ async function getCountry() {
     console.log(tag1);
 
     document.getElementById('textArea').innerHTML = `${artistname}'s country of origin is ${country} in ${city}. With their main genre desciptors being ${tag1}, ${tag2}, and ${tag3}.`;
-    
-    //const artistArea = document.getElementById('artistButtons');
-
-
 }

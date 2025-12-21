@@ -11,7 +11,6 @@ async function insertGenre() {
     const genre = document.createElement('a');
     genre.className = 'genreText';
     genre.textContent = response;
-    // document.getElementById('genreText').innerHTML = response;
     const query = transform(response);
     genre.href = `https://www.youtube.com/results?search_query=${query}`;
     document.getElementById('genreText').appendChild(genre);

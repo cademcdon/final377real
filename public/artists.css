@@ -44,36 +44,35 @@ body {
 }
 
 .aristButton:hover {
-  background-color: #c0392b; /* Darker red on hover */
-  transform: translateY(-2px); /* Lift effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+  background-color: #c0392b; 
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .artistButton:active {
-  transform: translateY(0); /* Press down effect */
+  transform: translateY(0); 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .artistButton {
-  background-color: #e74c3c; /* Red background */
+  background-color: #e74c3c; 
   color: white;
   border: none;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px; 
   padding: 10px 20px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   align-items: center;
   display: inline-block;
-  margin: 5px; /* Space between buttons */
+  margin: 5px;
   text-align: center;
 }
 
 #artistButtons {
     align-items: center;
-    /* width: 40%; */
     margin-left: 40px;
     margin-right: 40px;
 }
