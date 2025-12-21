@@ -64,6 +64,5 @@ async function infoClick(name) {
 }
 
 window.onload = function() {
-    //fetchArtists();
     createButtons();
 }
