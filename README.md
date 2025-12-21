@@ -1,8 +1,6 @@
-# INST 377 Final Project
+# INST 377 Final Project: MUSIC ZONE
 
-## Music Zone
-
-## Description
+## Description:
 ### This is a site where people can gather information and store reviews about music and artists.
 ### The target browser would be a web browser.
 
